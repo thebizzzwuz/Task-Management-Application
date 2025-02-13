@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='website/static/main.css'>
+    <script src='main.js'></script>
+    <meta name = "robots" content="noindex,noarchive,nofollow">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="agenda.html">Agenda </a>
+        <a href="addTask.html">Create a Task</a>
+        <a href="addList.html">Create a List</a>
+        <a href="myLists.html">My Lists</a>
+        <a href="feedback.html">Leave Feedback</a>
+        <a href="login.html">Login</a>
+        <a href="sign_up.html">Sign Up</a>
+
+    </nav>
+    <header>
+        <img src="android-chrome-192x192.png"
+        alt="This is where a designed logo will go."
+        title="&copy; 2023 Rajarshi Biswas">
+        <h1>Task Flow</h1>
+    </header>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+
+    </div>
+
+
+</body>
+
+
+
+
+</html>

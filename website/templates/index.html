@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task Flow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <meta name = "robots" content="noindex,noarchive,nofollow">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="agenda.html">Agenda </a>
+        <a href="addTask.html">Create a Task</a>
+        <a href="addList.html">Create a List</a>
+        <a href="myLists.html">My Lists</a>
+        <a href="feedback.html">Leave Feedback</a>
+
+    </nav>
+    <header>
+        <img src="android-chrome-192x192.png"
+        alt="This is where a designed logo will go."
+        title="&copy; 2023 Rajarshi Biswas">
+        <h1>Task Flow</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to Task Flow</h2>
+            <nav class="local">
+                <a href="#servers">Agenda</a>
+                <a href="#design">Create a Task</a>
+                <a href="#media">CReate a List</a>
+                <a href="#favicons">My Lists</a>
+                <a href="#cascading style">Cascading Stlye Sheets</a>
+
+
+            </nav>
+
+            <article id="servers">
+                <h3>Web Servers</h3>
+
+                <!--Explain what the concept of a designated home page means as it relates to a website's and server's index file.-->
+                <p>The term <strong>index</strong> is referring to the default page that prints the structure of hierarchy in a server. For example, 
+                    opening a textbook to a glossary (otherwise known as index) will give a general overview of where all the different 
+                    topics are located within the book. This serves as a starting point when searching for a resource with no direct path
+                    specified. The index can be named arbitrarily and serves as a general homepage for the website in question. </p>
+            
+                <!--Explain what can be seen in the browser's Web Dev/Inspector Network tab output screen. 
+                    What is different about the file's details when viewed from the web server versus the local computer?-->
+                <p>When the HTML file is viewed from the local computer, there is one main file listed (with lost JavaScript and CSS files). 
+                    In an alternate fashion, the web server tab contains an executor script as well as a favicon script. 
+                    This is due to the file being on located on Oregon State file servers. In addition, there is a stark 
+                    difference between the <strong>request</strong> and <strong>response</strong> headers. This is because in the web server variant, there 
+                    is communication between the browser, web server, and the file server. The copy on the hard disk is 
+                    located on the computer itself, so the communication is only between the browser and the local computer.</p>
+            
+                <!--Explain why the favicon.ico file has a status 200, but the main.css and main.js files status 400.-->
+                <p>The favicon.ico file has a <strong>200 status code</strong> because the get request was successful to retrieve the file
+                    from the server. In this case, the response body has the appropriate information. In contrast, no modified
+                    CSS or JavaScript files were uploaded to the server and thus, the get request has a fundamental error. 
+                    The <strong>404 status code</strong> specifies that the resource is missing from the server. This is the correct expectation 
+                    under the given circumstances. </p>
+            
+                <!--Explain the parts of the URL to your web file. What is the scheme, the subdomain, the host domain, and the resources?-->
+                <p>The <strong>scheme</strong> of a URL displays the <strong>protocol</strong> the web client is using for the request. In this case, the URL 
+                    begins with “https.//”, which is a secure version of the <strong>hyper text transfer protocol</strong>. Next, a subdomain
+                    is used as a prefix to a section of a general domain. In this page, the <strong>subdomain</strong> is “web.engr.” which is 
+                    linked to an IP address of the Oregon State engineering servers. The <strong>host domain</strong> is “oregonstate.edu” 
+                    which is the human friendly name of the engineering servers to which our request must be sent. The last 
+                    section of a URL must be the resources which provides a path to the requested file. In this case, “~biswasr/a1-biswasr/” 
+                    leads from the server space designated for the webpage to the folder in which the destination file is located. </p>
+            </article>
+
+            <article id="design">
+                <h3>Frontend Design</h3>
+
+                <!--The concept of frontend design, in a <p> paragraph.-->
+                <p> <strong>Frontend design</strong> is the forefront of usability when it comes to constructing websites and web applications. 
+                    A well-designed frontend has updated elements such as <strong>graphical user interface</strong>, navigation links, colors 
+                    and themes, as well as a thoughtful page layout. Given each annual progression of HTML standards, it&#8217;s 
+                    important to maintain modern interpretations of .css styling on webpages. A poorly designed frontend will 
+                    frustrate users from accomplishing their goals and ultimately forward their efforts to an alternative website 
+                    or web application. Both clients and users should expect form and function that makes sense on a website.</p>
+
+                <!--The five "E"s of usability, in a <dl> definition list that separates the topics and descriptions. -->
+                <dl>
+                    <dt><strong>Effective</strong></dt>
+                    <dd>The effectiveness of a website is determined by the success rate of users accomplishing their intended 
+                        purpose when interacting with the interface.</dd>
+                    <dt><strong>Efficient</strong></dt>
+                    <dd>Part of the process of reaching a goal requires efficiency. Users need to be able to fulfill a desire 
+                        with the least amount of effort or steps. This also means that they can achieve results in a timely manner.</dd>
+                    <dt><strong>Easy to navigate</strong></dt>
+                    <dd>For first time users, navigating the website should be uncomplicated. Users should be able to find their 
+                        resource by relatively easy, and also be able to remember the pathways for repetition.</dd>
+                    <dt><strong>Error-Free</strong></dt>
+                    <dd>Websites should be accessible to any of the users who are intended to be the base users. There should
+                        not be common errors for users who are trying to submit specific request types.</dd>
+                    <dt><strong>Enjoyable</strong></dt>
+                    <dd>Enjoyment in using the website is a key to retaining traffic. The website must be adhered to the target 
+                        audience in order for users to gain the most utility. The overall experience includes all 4 pillars mentioned 
+                        above as well as a great frontend design to complete a package. </dd>
+                </dl>
+                
+                <!--The purpose of each of the page layout tags, in a <p> paragraph. Focus on the 6 we used in this assignment.-->
+                <p><strong>Page layout tags</strong> are important for structuring the content within the body of an .html document. The tags serve a 
+                    purpose for allowing both the interpreter (browser) and the user to gain an enhanced sense of hierarchical organization. 
+                    The first essential element is a <strong>header</strong>. Headers are used to cast a masthead for a website, giving it a more professional 
+                    introduction to the user. It includes name, publisher, and other arbitrary information. Traditionally, the <strong>nav</strong> element is 
+                    presented next with the sole purpose of providing a map for resources. Nav elements can help guide the user from page to 
+                    page, giving a compass for reaching their intended destination. Once the user selects a resource of interest, they are likely 
+                    to encounter a <strong>main</strong> element. The main element holds the significant breadth of content within a webpage. This includes the 
+                    stories, media, and other primary content. The content is usually broken down by the <strong>section</strong> element to group together related 
+                    content. It reduces the time it takes for a user to find the relevant resources in a webpage. Within a section is also subsections 
+                    defined by the <strong>article</strong> element. Articles are independent bodies dedicated to a single topic. This can be accessed by navigation 
+                    elements, further simplifying the path to a user goal. The very last piece to a set of elements is called a <strong>footer</strong>. The footer is 
+                    separate from the main element and provides the critical information to a website, including copyright information, contacts, 
+                    and publication information. </p>
+                
+                <!--How anchors link to external content, internal content, and from page-to-page, in an <ol> ordered list. -->
+                <p>Anchors are a useful tool in HTML construction. Anchors are typically reserved for creating hyperlinks between two resources. There are 
+                    really two main types of resources: external and internal. Linking to external resources such as other websites uses an absolute path.
+                     An <strong>absolute path</strong> uses a complete path to the resource because it is outside the website. An example of this would be a URL that can 
+                     be entered in the address bar on a browser. The opposite is true of a resource that shares the same directory as the web or application.
+                      Because the link to the resource is in the same root files, a <strong>relative path</strong> is used to identify it. In general, the relative paths 
+                      are shorter due to the shared directory. 
+                    There are three main categories for utilizing anchors:
+                </p>
+
+                <ol>
+                    <li><strong>Internal anchor</strong>: This type of anchor provides useful navigation measures for locating specific articles or 
+                        data within the webpage. These anchors address ID tags that are used in accordance with articles 
+                        to identify where to take the user to. </li>
+                    <li><strong>External anchor</strong>: The best way to support content on a website requires referencing another resource. 
+                        In this case, an external anchor can be used to hyperlink a resource outside the webpage domain. 
+                        URL&#8217;s can be used to locate the desired resource, with a simplified description as the button for entrance. Because 
+                        the resource is now located outside of the local directory, an <strong>absolute path</strong> (URL) must be used.</li>
+                    <li>Page-to-page: One of the most commonly used navigational gestures include accessing different pages within the same 
+                        website. This gesture is better known as page-to-page referencing. As the name suggests, there is a link which provides 
+                        a path to each individual page (separate HTML files). These links are based on the HTML file names in the same directory
+                         and thus use a <strong>relative path</strong> to establish a connection.</li>
+                </ol>
+            </article>
+
+            <article id="media">
+                <h3>Optimizing images</h3>
+                <!--What are the 6 major specifications of images for the web?  And why?-->
+                <p>Images that are placed in an HTML document must have 6 crucial elements: a descriptive file name, a small file size, exact dimensions,
+                    correct file format, reduced resolution, and the proper color mode. A descriptive file name improves search engine optimization to 
+                    help it sort the image into search results for a similar target. It&#8217;s important to be concise while being still descriptive to be a 
+                    proper name. As mentioned in the frontend design article, there is a time constraint on user attention when it comes to loading content. 
+                    Thus, it&#8217;s critical to reduce the file size to an appropriate resolution to find a balance between loading times and image quality. 
+                    Typically, <strong>lossless compression</strong> is the best choice because it does not significantly deteriorate the image quality. Just like with 
+                    compression, it&#8217;s also essential that an image be the proper dimensions to fit the webpage. An overly large file dimension will most 
+                    definitely increase the loading time because it is not tailored to the <strong>viewport</strong>. Computers have many formats for images because they 
+                    all have different properties that provide unique utility from each type. Most online formats take the form of .JPG however, there are 
+                    line-art images that rely on .GIF or .PNG for transparency. As per each monitors' capability, there are several densities of pixel arrays
+                     that can support higher resolution images. The industry standard was 72 pixels per inch, however, there are far more advances 
+                     displays. This just implies that the use of various image sizes can be useful for catering to different display resolutions. The very 
+                     last specification is to use the correct color mode per media type. RGB is most commonly used with .PNG, .JPG, .SVG and .WebP Indexed 
+                     is more often reserved for .GIF or .PNG files.</p>
+
+                <!--Which file formats are most appropriate for photos and for line art? And why?-->
+                <p>For photos, a <strong>JPG file</strong> is the most appropriate choice due to its color properties. For an image to be pleasing, the image must be sharp 
+                    and colorful. Typically, JPG files can display millions of colors and have fantastic <strong>compression</strong> properties which allow them to retain 
+                    quality while reducing load times and saving server space. JPG files don&#8217;t have an alpha channel and thus aren&#8217;t useful for line art. 
+                    For this reason, <strong>PNG formats</strong> are more commonly seen with line art. This is because they have RBG color mode, support compression, and 
+                    can be placed over just about anything without distortion. The main supporting quality for the PNG format is the <strong>alpha channel</strong>,
+                     which can allow the background to become transparent and thus become an overlay anywhere in the webpage.</p>
+            </article>
+
+            <article id="favicons">
+                <h3>Favicons</h3>
+                <!--How do browsers and devices use favicons-->
+                <p><strong>Favicons</strong> are used to display a company logo in a webpage, tab, or bookmarks list. These icons can be in .GIF, .PNG, .ICO, and .SVG 
+                    file formats. Regardless of the file type, the icon is simplified through a favicon generator and saved in a variety of sizes. All 
+                    the sizes are usually linked in the head of a website, where the browser can pick up the appropriate size and display it wherever 
+                    the website is saved or displayed. This icon can also be used in a header to display the logo next to the title of the website. 
+                    Nowadays, the favicon in the header is commonly used a button for returning to the index of the website.</p>
+            </article>
+
+            <article id="cascading style">
+                <h3>Cascading Style Sheets</h3>
+                <p>A default HMTL document has a default style, which is monotone and uninspiring, intentionally. <strong>Cascading Style Sheets</strong> (.css files) are 
+                    important to incorporate in an HTML file for many reasons other than aesthetics. A more colorful and stylized website can improve usability, legibility, 
+                    and a dynamic method of restructuring the elements in the document itself. Apart from these ideas, there&#8217;s also an importance of load times and 
+                    maintenance that CSS files can help with. A real-world example is the change in brand requirements from the early days of skeuomorphic design to a more 
+                    flat, material design invoked standard. As a developer, it&#8217;s critical to deliver an end product that looks and feels modern while catering to the
+                     brand requirements. Cascading Style Sheets has become the industry solution to creating a fully functional and aesthetically pleasing website.</p>
+
+                <p>There are 5 existing methods to incorporate style to an HTML document. The most efficient method is to <strong>link</strong> an <strong>external style 
+                    sheet</strong> in the <strong>global head</strong> area of an HTML document. Because all HTML documents can link to a global CSS file, this method 
+                    can provide an efficient way to spread the selected style to all pages of a website. As per updating specific modules or components of a website, other
+                    CSS files can be imported into the global stylesheet by using the “@import” function or by linking in the header <u>after</u> the global stylesheet.
+                    <strong>Embedding</strong> styles does not require linking however, it&#8217;s mostly for singular purposes because it is rather tedious to repeat this 
+                    function to entire HTML documents. Embedding is done using the “&#x3c;style&#x3e;” tags and can define the appearance of elements such as headings or 
+                    article text. <strong>Inline</strong> styling is also similar to embedding but is done directly inside the element tags. For example, you can define 
+                    an article with blue text using&#58; “&#x3c;article style = “color blue”&#x3e;&#x3c;article color= “blue”/&#x3e;”. This method is rather outdated 
+                    and still tedious to implement. The very last incorporating method is by exploiting the <strong>Document Object Model (DOM)</strong> by specifying 
+                    which element to target and which style to incorporate.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rajarshi Biswas</p>
+    </footer>
+
+
+</body>
+</html>

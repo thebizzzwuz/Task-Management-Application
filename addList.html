@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Task Flow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <meta name = "robots" content="noindex,noarchive,nofollow">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="agenda.html">Help</a>
+        <a href="addTask.html">Create a Task</a>
+        <a href="addList.html">Create a List</a>
+        <a href="myLists.html">My Lists</a>
+        <a href="feedback.html">Leave Feedback</a>
+
+    </nav>
+    <header>
+        <img src="android-chrome-192x192.png"
+             alt="This is where a designed logo will go."
+             title="&copy; 2023 Rajarshi Biswas">
+        <h1>Task Flow</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add a List</h2>
+
+            <label for="name">List Title:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+
+        <form action="/submit_color" method="post">  <p>Choose a color for your new list:</p>
+
+        <label class="color-option">
+            <input type="radio" id="red" name="color" value="red" required>
+            <span style="color: red;">Red</span>  </label>
+
+        <label class="color-option">
+            <input type="radio" id="orange" name="color" value="orange">
+            <span style="color: orange;">Orange</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="yellow" name="color" value="yellow">
+            <span style="color: yellow;">Yellow</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="green" name="color" value="green">
+            <span style="color: green;">Green</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="blue" name="color" value="blue">
+            <span style="color: blue;">Blue</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="purple" name="color" value="purple">
+            <span style="color: purple;">Purple</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="pink" name="color" value="pink">
+            <span style="color: pink;">Pink</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="brown" name="color" value="brown">
+            <span style="color: brown;">Brown</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="black" name="color" value="black">
+            <span style="color: black;">Black</span>
+        </label>
+
+        <label class="color-option">
+            <input type="radio" id="gray" name="color" value="gray">
+            <span style="color: gray;">Gray</span>
+        </label>
+
+        <br><input type="submit" value="Create List">
+    </form>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rajarshi Biswas</p>
+    </footer>
+
+
+</body>
+</html>
